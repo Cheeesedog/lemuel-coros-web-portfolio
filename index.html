@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Web Developer Portfolio</title>
+
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c23feb69b9.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<nav>
+				<a href="#header" class="home">Home</a>
+
+				<ul id="sideMenu">
+					<li> <a href="#about">About Me</a></li>
+					<li> <a href="#certificates">Certificates</a></li>
+					<li> <a href="#portfolio">Project Experience</a></li>
+					<li> <a href="#contact">Contact Me</a></li>
+					<i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openMenu()"></i>
+				</nav>
+			<div class="container">
+				<!-- <nav>
+					<a href="#header" class="home">Home</a>
+
+					<ul id="sideMenu">
+						<li> <a href="#header" class="home2">Home</a></li>
+						<li> <a href="#about">About Me</a></li>
+						<li> <a href="#projects">Projects</a></li>
+						<li> <a href="#contact">Contact Me</a></li>
+						<i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openMenu()"></i>
+				</nav> -->
+
+				<div class="header-text">
+					<p>Full-Stack Web Developer</p>
+					<h1>Hello, I'm <span>Lemuel</span> <br>Coros From Philippines</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="./images/about.png">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p class="about-text">Hello! My name is Lemuel Coros and I am a passionate web developer with a love for crafting digital experiences. I specialize in MERN Stack(MongoDB, Express.js, React.js and Node.js), combining creativity and technical expertise to bring ideas to life. Explore my portfolio to discover how I've transformed visions into reality and let's collaborate on your next exciting project</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+							<p class="tab-links" onClick="opentab('project-experience')">Experience</p>
+							<p class="tab-links" onClick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li>
+									<span>Front-End Web Development</span><br>HTML5, CSS3, Bootstrap, Git Basics
+								</li>
+								<li>
+									<span>Back-End Web Development</span><br>JavaScript, Node.js, Express.js, MongoDB
+								</li>
+								<li>
+									<span>Full-Stack Web Development</span><br>React.js, DOM Manipulation, API Integration with Fetch
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="project-experience">
+							<ul>
+								<li>
+									<span>Front-End Capstone</span><br>Designed and developed a static responsive website using HTML5, CSS3, Bootstrap, and Gitfor version control, hosted on Github.
+								<li>
+									<span>Back-End Capstone</span><br>Created an E-Commerce API using JavaScript, Node.js, MongoDB and Express.js, hosted on Render.
+								<li>
+									<span>Full-Stack Capstone</span><br>Developed a React-based web application with API Integration utilizing modern JavaScripttechniques and DOM Manipulation, hosted on Vercel.
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>Electronics Engineering</span><br>Central Colleges of the Philippines
+								</li>
+								<li>
+									<span>Zuitt Web Developer Program (MERN Stack)</span><br>Zuitt Coding Bootcamp
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Certificates -->
+
+		<div id="certificates">
+			<div class="container">
+				<h1 class="sub-title">Certificates</h1>
+				<div class="certificates-list">
+					<div>
+						<h2>Front End Web Development</h2>
+						<p>This certifies that the bearer has completed all the prescribed requirements of Zuitt's Frontend Course using Git, HTML, CSS and Bootstrap 4.</p>
+						<a href="https://share.zertify.zuitt.co/certificate/7b2abffd-de8d-49d2-b4cc-287fc30ae59b/" target="_blank">View certificate</a>
+					</div>
+					<div>
+						<h2>Back End Web Development</h2>
+						<p>This certifies that the bearer has completed all the prescribed requirements of Zuitt's Backend Course using Javascrip, MongoDB, Node.js, Postman and Express.js.</p>
+						<a href="https://share.zertify.zuitt.co/certificate/9a208199-169e-4720-acfc-ee43ad984774/" target="_blank">View certificate</a>
+					</div>
+					<div>
+						<h2>Full Stack Web Development</h2>
+						<p>This certifies that the beaerer has completed all the prescribed requirements of Zuitt's Full Stack Course using the MERN tech stack (MongoDB, Express.js, React.js and Node.js).</p>
+						<a href="https://share.zertify.zuitt.co/certificate/1bd00cf0-935c-4fc9-8b09-c393d30be6bf/" target="_blank">View certificate</a>
+					</div>
+					<div>
+						<!-- <img src="https://zuitt-zertify.s3.amazonaws.com/prod/certificates/38c2880f-83e1-41f5-ab72-b9cf5c201cd7.jpeg"> -->
+						<h2>Zuitt Developer Career Program</h2>
+						<p>This certifies that the bearer has completed all the prescribed requirements of Zuitt's Developer Career Program using Git, HTML, CSS, Bootstrap, Javascript, MongoDB, NodeJS, ExpressJS and ReactJS, as well as Full Stack Web Development.</p>
+						<a href="https://share.zertify.zuitt.co/certificate/38c2880f-83e1-41f5-ab72-b9cf5c201cd7/" target="_blank">View certificate</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Portfolio -->
+
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">Project Experience</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="./images/pic1.png">
+						<div class="layer">
+							<h3>Front-End Capstone</h3>
+							<p>Designed and developed a static responsive website using HTML5, CSS3, Bootstrap, and Git for version control, hosted on Github.</p>
+							<a href="https://cheeesedog.github.io/capstone-coros/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="./images/pic2.png">
+						<div class="layer">
+							<h3>Back-End Capstone</h3>
+							<p>Created an E-Commerce API using JavaScript, Node.js, MongoDB and Express.js, hosted onRender.</p>
+							<a href="https://capstone-2-coros.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="./images/pic3.png">
+						<div class="layer">
+							<h3>Full-Stack Capstone</h3>
+							<p>Developed a React-based web application with API Integration utilizing modern JavaScripttechniques and DOM Manipulation, hosted on Vercel.</p>
+							<a href="https://caps-3-d52uy6jr9-cheeesedog.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact -->
+
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-paper-plane"></i>lemuelcoros@gmail.com</p>
+						<p> <i class="fa-solid fa-square-phone"></i>09618292351</p>
+						<div class="social-icons">
+							<a href="https://facebook.com/llcoros" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/lemuelcoros/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+					</div>
+					<div class="contact-right">
+						<form action="https://formspree.io/f/mvojglyy"
+  						method="POST">
+							<input type="text" name="Name" placeholder="Name" required>
+							<input type="email" name="email" placeholder="Email Address" required>
+							<textarea name="Message" rows="6" placeholder="Message"></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<p>Copyright © 2023 Lemuel Coros. All rights reserved.</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			var tabLinks = document.getElementsByClassName("tab-links")
+			var tabContents = document.getElementsByClassName("tab-contents")
+
+			function opentab(tabname){
+				for(tabLink of tabLinks){
+					tabLink.classList.remove("active-link")
+				}
+				for(tabContent of tabContents){
+					tabContent.classList.remove("active-tab");
+				}
+
+				event.currentTarget.classList.add("active-link");
+
+				document.getElementById(tabname).classList.add("active-tab");
+
+			}
+		</script>
+
+		<script type="text/javascript">
+			
+			var sideMenu1 = document.getElementById("sideMenu")
+
+			function openMenu(){
+				sideMenu1.style.right = "0";
+			}
+
+			function closeMenu(){
+				sideMenu1.style.right = '-300px';
+			}
+
+		</script>
+	</body>
+
+</html>
