@@ -237,13 +237,7 @@ nav ul li a:hover::after {
 	font-weight: 300;
 	border-radius: 10px;
 	transition: background 0.5s, transform 0.5s;
-	display: flex;
-	flex-direction: column;
 
-}
-
-.view-certificate {
-	margin-top: auto;
 }
 
 .certificates-list div p {
