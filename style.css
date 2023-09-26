@@ -221,6 +221,15 @@ nav ul li a:hover::after {
 	margin-top: 50px;
 }
 
+/*.certificates-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.view-certificate {
+	align-self: flex-end;
+}
+*/
 .certificates-list div {
 	background: #262626;
 	padding: 40px;
@@ -228,7 +237,13 @@ nav ul li a:hover::after {
 	font-weight: 300;
 	border-radius: 10px;
 	transition: background 0.5s, transform 0.5s;
+	display: flex;
+	flex-direction: column;
 
+}
+
+.view-certificate {
+	margin-top: auto;
 }
 
 .certificates-list div p {
